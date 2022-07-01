@@ -27,6 +27,10 @@ M.plugins = {
     --     hide_root_folder = true,
     --   },
     -- }
+
+   ["hrsh7th/nvim-cmp"] = function()
+     return require "custom.plugins.cfg.cmp"
+   end
   },
 
   options = {
