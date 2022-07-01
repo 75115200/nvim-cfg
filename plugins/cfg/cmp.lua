@@ -13,6 +13,4 @@ local options = {
   }
 }
 
-print("init custom")
-
 return options
