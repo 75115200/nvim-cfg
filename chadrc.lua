@@ -8,7 +8,7 @@ local M = {}
 M.mappings = require("custom.mappings")
 
 M.ui = {
-  theme = "gruvchad",
+  theme = "vscode_dark",
 }
 
 M.options = {
@@ -28,9 +28,13 @@ M.plugins = {
     --   },
     -- }
 
-   ["hrsh7th/nvim-cmp"] = function()
-     return require "custom.plugins.cfg.cmp"
-   end
+    ["hrsh7th/nvim-cmp"] = function()
+      return require "custom.plugins.cfg.cmp"
+    end,
+
+    ["nvim-telescope/telescope.nvim"] = {
+      extensions_list = { "themes", "terms", "changed_files"},
+    }
   },
 
   options = {

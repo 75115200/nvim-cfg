@@ -10,7 +10,7 @@ M.disabled = {
 M.general = {
   n = {
     ["<C-e>"] = { "<cmd> Telescope oldfiles <CR>", "   find oldfiles" },
-    ["<C-r>"] = {
+    ["<Leader>rn"] = {
       function()
         require("nvchad.ui.renamer").open()
       end,
@@ -28,4 +28,9 @@ M.general = {
   }
 }
 
+M.telescope = {
+  n = {
+    ["<C-d>"] = { "<cmd> Telescope changed_files <CR>", "telescope changed file" },
+  }
+}
 return M

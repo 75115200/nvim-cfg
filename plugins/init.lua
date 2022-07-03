@@ -4,4 +4,5 @@ return {
       require "custom.plugins.cfg.vim-go"
     end,
   },
+  ["axkirillov/telescope-changed-files"] = {}
 }
